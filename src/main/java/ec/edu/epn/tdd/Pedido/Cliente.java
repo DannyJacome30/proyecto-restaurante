@@ -55,7 +55,7 @@ public class Cliente {
     public void setPassword(String password) {
         this.password = password;
     }
-    public String add_seleccion(Empleado empleado1,Restaurante restaurante,int opcion){
+    public boolean add_seleccion(Empleado empleado1,Restaurante restaurante,int opcion){
         String errores="";
         //valdiacion
         System.out.println("soy "+this.Nombre+" "+this.Apellido+" voy a ingresar a la aplciacion con las credenciales");
@@ -97,8 +97,9 @@ public class Cliente {
         
         if(!"".equals(errores)){
             System.out.println("Existen errores que no permiten la finalizacion "+errores);
+            return false;
         }
-        return errores;
+        return true;
     }
 }
 
