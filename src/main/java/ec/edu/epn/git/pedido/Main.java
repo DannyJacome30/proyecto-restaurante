@@ -6,6 +6,7 @@
 
 package ec.edu.epn.git.pedido;
 
+import ec.edu.epn.git.reserva.Reservation;
 /**
  *
  * @author erick
@@ -46,7 +47,17 @@ public class Main {
         int [][][] Mesas=new int[0][0][0];
         Restaurante restaurante=new Restaurante(menu, Mesas);
         cliente1.add_seleccion(empleado1, restaurante,2);
+        cliente2.add_seleccion(empleado1, restaurante, 2);
+        Reservation reserva= new Reservation();
+        int respuesta=reserva.reser("2021-02-19","15:00",2);
+        if(respuesta==1){
+            System.out.println("Mesa disponible");
+        }else{
+            System.out.println("Mesa no disponible");
+        }
+
     }
+
 
 }
 

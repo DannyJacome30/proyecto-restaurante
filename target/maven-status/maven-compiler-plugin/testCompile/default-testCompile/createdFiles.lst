@@ -1,2 +1,6 @@
-ec/edu/epn/tdd/Pedido/PedidoTest.class
-ec/edu/epn/tdd/Login/LoginTest.class
+ec/edu/epn/git/pedido/PedidoTest.class
+ec/edu/epn/git/reserva/ReservationTestDate.class
+ec/edu/epn/git/reserva/ReservationTestParametroMesa.class
+ec/edu/epn/git/reserva/LoginTest.class
+ec/edu/epn/git/reserva/ReservationTest.class
+ec/edu/epn/git/reserva/MensajeConfirmacionTest.class
