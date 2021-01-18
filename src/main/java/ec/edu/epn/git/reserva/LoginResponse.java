@@ -1,4 +1,4 @@
-package ec.edu.epn.tdd.Login;
+package ec.edu.epn.git.reserva;
 
 public class LoginResponse {
     enum LoginStatus{

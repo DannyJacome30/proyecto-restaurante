@@ -1,6 +1,4 @@
-package ec.edu.epn.tdd.Pedido;
-
-import java.util.Arrays;
+package ec.edu.epn.git.pedido;
 
 /**
  *
@@ -69,7 +67,7 @@ public class Cliente {
                 break;
             case 2:
                 //caso realziar pedido
-                System.out.println("se realiza la reserva de un pedido");
+                System.out.println("se realiza el pedido");
                 System.out.println("El cliente selecciono la siguiente combinacion: "+restaurante.getMenu()[0][0]+", "+ restaurante.getMenu()[3][0] + ", " +restaurante.getMenu()[7][0]+" y "+restaurante.getMenu()[8][0]);
                 //confirmacion del empleado             
                if(empleado1.getCargo()=="Mesero"){

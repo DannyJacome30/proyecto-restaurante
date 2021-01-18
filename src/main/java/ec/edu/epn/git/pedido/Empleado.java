@@ -1,4 +1,4 @@
-package ec.edu.epn.tdd.Pedido;
+package ec.edu.epn.git.pedido;
 
 /**
  *

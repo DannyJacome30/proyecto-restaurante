@@ -3,22 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.epn.tdd.Pedido;
-import ec.edu.epn.tdd.Pedido.Cliente;
-import ec.edu.epn.tdd.Pedido.Empleado;
-import ec.edu.epn.tdd.Pedido.Restaurante;
 
-import org.junit.Test;
-import org.mockito.Mockito;
-import static org.junit.Assert.*;
+package ec.edu.epn.git.pedido;
 
 /**
  *
  * @author erick
  */
-public class PedidoTest {
-    @Test
-    public void PedidoTest(){
+public class Main {
+    public static void main(String[] args){
 
         // TODO code application logic here
         //declaracion del cliente
@@ -52,20 +45,9 @@ public class PedidoTest {
         menu[9][1]="1";
         int [][][] Mesas=new int[0][0][0];
         Restaurante restaurante=new Restaurante(menu, Mesas);
-
-
-
-        // declaracion del restaurant
-
-        boolean actual=cliente1.add_seleccion(empleado1, restaurante,2);
-        boolean expected=true;
-
-        boolean result=assertEquals(actual,expected);
-        boolean JUnt = assertEquals(true,cliente2.add_seleccion(empleado1, restaurante, 2));
+        cliente1.add_seleccion(empleado1, restaurante,2);
     }
-    private static boolean assertEquals(boolean actual,boolean expected){
-        return actual == expected;
-    }
+
 }
 
 

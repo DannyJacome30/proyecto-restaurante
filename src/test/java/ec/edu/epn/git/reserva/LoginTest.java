@@ -1,8 +1,5 @@
-package ec.edu.epn.tdd.Login;
+package ec.edu.epn.git.reserva;
 
-import ec.edu.epn.tdd.Login.Login;
-import ec.edu.epn.tdd.Login.LoginProcesson;
-import ec.edu.epn.tdd.Login.LoginResponse;
 import org.junit.Test;
 import org.mockito.Mockito;
 
