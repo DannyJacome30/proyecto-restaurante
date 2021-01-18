@@ -33,9 +33,9 @@ public class Reservation {
         int mes = fecha.getMonth();
         int año = fecha.getYear();
 
-        String fechaS= dia + "/" + (mes+1) + "/" + año;
-        Date fechaA = fechaF.parse(fechaS);
-        if (dateReservation.after(fechaA))
+        String fechaFormato= dia + "/" + (mes+1) + "/" + año;
+        Date fechaActual = fechaF.parse(fechaFormato);
+        if (dateReservation.after(fechaActual))
             return "ok";
         else
             return "error";
