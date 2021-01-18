@@ -9,7 +9,7 @@ public class Reservation {
     private Date fecha;
     private String hora;
     private int numPersonas;
-
+    SimpleDateFormat fechaF = new SimpleDateFormat("yyyy/mm/dd");
     public int reser(String fecha, String hora, int numPersonas) {
 
         String mesa="disponible";
@@ -26,7 +26,7 @@ public class Reservation {
     }
 
     public String verificarFecha(String date) throws ParseException {
-        SimpleDateFormat fechaF = new SimpleDateFormat("yyyy/mm/dd");
+
         Date dateReservation = fechaF.parse(date);
         Date fecha = new Date();
         int dia = fecha.getDate();
